@@ -1,0 +1,175 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.container {
+    height: 100vh;
+    width: 100%;
+    background: url("background3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: hard-light;
+    background-color: rgb(18, 139, 209);
+}
+.container #heading{
+    color: #fff;
+    font-size: 42px;
+    position: absolute;
+    top: 30%;
+    left: 16%;
+    transform: translate(-50%,-50%);
+}
+.container #slogan{
+    margin-top: 10px;
+    width: 392px;
+    color:#edd6e8;
+    /* #e9c5e3
+    #cac0e7 */
+    position: absolute;
+    top: 35%;
+    left: 16%;
+    transform: translate(-50%,-50%);
+    line-height: 23px;
+}
+.container header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    padding: 30px;
+}
+.container header button{
+    height: 30px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid greenyellow;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.loginform,
+.signupform{
+    display: none;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s;
+    border: 1px solid #fff;
+    height: 250px;
+    width: 500px;
+    padding: 10px;
+    padding-left: 50px;
+    border-radius: 5px;
+    z-index: 1;
+    color: #fff;
+}
+.signupform{
+    height: 400px;
+}
+.loginform h2{
+    margin-bottom: 10px;
+}
+.loginform label,
+.signupform label{
+    display: block;
+    margin-top: 5px;
+}
+.loginform input,
+.signupform input{
+    width: 90%;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 5px;
+    /* border: 1px solid #999; */
+    border: none;
+}
+.loginform #submit,
+.signupform #submitBtn{
+    width: 30%;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+.loginform button,
+.signupform button,
+.signupform #resetBtn{
+    width: 30%;
+    height: 30px;
+    font-weight: bold;
+    background: transparent;
+    border: 2px solid green;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+.LoginActive,
+.signupActive{
+    top: 50%;
+    display: block;
+}
+.containerActive{
+    filter: blur(5px);
+}
+
+#alert{
+    background: rgba(243, 20, 20, 0.74);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    z-index: 1;
+}
+#alert span{
+    font-weight: bold;
+}
+#alert > span{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.container header #username {
+    color: #fff;
+
+}
+
+#teachers{
+    width: 100%;
+    height: 150px;
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    overflow: hidden;
+}
+#teachers .teacher{
+    min-width: 350px;
+    border: 1px solid red;
+    overflow: hidden;
+    height: 120px;
+    display: flex;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 20px;
+    transition: all 0.5s;
+}
+#teachers .teacher img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: none;
+    margin-right: 10px;
+}
