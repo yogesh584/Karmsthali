@@ -70,6 +70,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karmsthali</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 
 <body>
@@ -163,7 +164,36 @@
         <h1 id="heading">Karmsthali Institute</h1>
         <p id="slogan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda amet. </p>
     </div>
-
+    <div id="Toppers">
+        <div id="ThisYeartoppers">
+            <h2>Our Top 5 Students of 2021</h2>
+            <div id="ToppersImage">
+                <div id="topper">
+                    <img src="Toppers/linustorvalds.jpg" alt="">
+                </div>
+                <div id="otherTopper">
+                    <div class="anotherTopper">
+                        <img src="Toppers/Steave-Jobs.jpg" alt="Topper">
+                    </div>
+                    <div class="anotherTopper">
+                        <img src="Toppers/Mark_Zukerberg.jpg" alt="Topper">
+                    </div>
+                    <div class="anotherTopper">
+                        <img src="Toppers/bill-gates.jpg" alt="Topper">
+                    </div>
+                    <div class="anotherTopper">
+                        <img src="Toppers/mrrobot.jpg" alt="Topper">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="previousYearToppers">
+            <div class="TopperBox TopperBox1">2020</div>
+            <div class="TopperBox TopperBox2">2019</div>
+            <div class="TopperBox TopperBox3">2018</div>
+            <div class="TopperBox TopperBox4">2017</div>
+        </div>
+    </div>
     <div id="teachers">
         <?php
             $GetTeachers = "SELECT * FROM `karmsthali`.`teachersdata`";
@@ -179,6 +209,9 @@
             }
         ?>
     </div>
+    <?php
+        require "_footer.php";
+    ?>
 </body>
 
 
