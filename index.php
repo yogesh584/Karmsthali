@@ -194,6 +194,30 @@
             <div class="TopperBox TopperBox4">2017</div>
         </div>
     </div>
+    <div id="reviewOfOurStudents">
+        <h2>Student Review</h2>
+        <div class="students student1">
+            <img src="Teacher-Images/linustorvalds.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque quisquam delectus totam architecto
+                facilis sunt praesentium, consequatur modi libero! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+            </p>
+        </div>
+        <div class="students student2">
+            <img src="Teacher-Images/linustorvalds.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque quisquam delectus totam architecto
+                facilis sunt praesentium, consequatur modi libero! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. consectetur adipisicing elit. Ut, quasi?
+            </p>
+        </div>
+        <div class="students student3">
+            <img src="Teacher-Images/linustorvalds.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cumque quisquam delectus totam architecto
+                facilis sunt praesentium, consicing elit. Ut, quasi? Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Voluptate, odit!
+            </p>
+        </div>
+    </div>
     <div id="teachers">
         <?php
             $GetTeachers = "SELECT * FROM `karmsthali`.`teachersdata`";
@@ -209,6 +233,39 @@
             }
         ?>
     </div>
+    <div id="contactUs">
+        <div id="offlineContact">
+            <h2 id="contactHeading">Contact Us</h2>
+            <ul class="info">
+                <li>
+                    <span><img src="images/map.png" alt=""></span>
+                    <span>Near Kachari Road<br>
+                        Vijay Bhawan Ke Samne<br>
+                        Alwar,Rajasthan,India
+                    </span>
+                </li>
+                <li>
+                    <span><img src="images/Phone.svg" alt=""></span>
+                    <p><a href="tel:9667149543">+91 9667149543</a></p>
+                </li>
+                <li>
+                    <span><img src="images/Gmail.svg" alt=""></span>
+                    <span>
+                        <p><a href="mailto:yjangid584@gmail.com">Yjangid584@gmail.com</a></p>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <form action="">
+            <div>
+                <input type="test" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+            </div>
+            <input type="text" id="PhoneNumber" placeholder="Phone Number" required>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" id="submit">
+        </form>
+    </div>
     <?php
         require "_footer.php";
     ?>
@@ -217,3 +274,10 @@
 
 </html>
 <script src="index.js"></script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>
+    VanillaTilt.init(document.querySelectorAll(".students"), {
+        max: 25,
+        speed: 400
+    });
+</script>

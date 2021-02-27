@@ -12,6 +12,7 @@
     background-repeat: no-repeat;
     background-blend-mode: hard-light;
     background-color: rgb(18, 139, 209);
+    background-attachment: fixed;
 }
 
 .container #heading {
@@ -168,8 +169,9 @@
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
-    padding-top: 8px;
+    padding-top: 15px;
     padding-bottom: 10px;
+    background-attachment: fixed;
 }
 #ThisYeartoppers {
     width: 60%;
@@ -256,6 +258,67 @@
     transform: scale(1.1);
     z-index: 1;
 }
+#reviewOfOurStudents {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    background: #161623;
+    align-items: center;
+    position: relative;
+}
+#reviewOfOurStudents::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(30% at right 70%);
+}
+#reviewOfOurStudents::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(30% at 10% 10%);
+}
+#reviewOfOurStudents h2 {
+    z-index: 1;
+    color: #fff;
+}
+#reviewOfOurStudents .students {
+    height: 350px;
+    width: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    border-radius: 5px;
+    border-top: rgba(255, 255, 255, 0.5);
+    border-left: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+#reviewOfOurStudents .students img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#reviewOfOurStudents .students p {
+    text-align: center;
+    color: whitesmoke;
+}
 #teachers {
     width: 98vw;
     height: 150px;
@@ -292,4 +355,75 @@
     border-radius: 50%;
     border: none;
     margin-right: 10px;
+}
+
+#contactUs {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #181818;
+    color: #fff;
+}
+#contactUs a {
+    color: #fff;
+    text-decoration: none;
+}
+#contactHeading {
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+#contactUs #offlineContact {
+    width: 30%;
+}
+#contactUs #offlineContact ul li {
+    display: flex;
+    margin-bottom: 16px;
+}
+#contactUs #offlineContact ul li span img {
+    height: 25px;
+    width: 25px;
+    margin-right: 5px;
+}
+#contactUs form {
+    display: flex;
+    flex-direction: column;
+    width: 41%;
+}
+#contactUs form div input {
+    height: 40px;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+#contactUs form input {
+    width: 98%;
+    height: 40px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#contactUs form textarea {
+    width: 98%;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    padding: 10px;
+}
+#contactUs form #submit {
+    width: 150px;
+    font-weight: bold;
+    background: none;
+    border: 2px solid greenyellow;
+    color: #fff;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#contactUs form #submit:hover {
+    background: yellowgreen;
+    color: #333;
 }
